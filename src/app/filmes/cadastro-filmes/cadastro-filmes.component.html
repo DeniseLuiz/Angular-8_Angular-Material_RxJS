@@ -5,12 +5,7 @@
     <form [formGroup]="cadastro" (ngSubmit)="salvar()" (ngReset)="reiniciarForm()">
       <mat-card-content>
 
-          <mat-form-field class="full-width">
-            <input matInput placeholder="Título*" name="titulo" formControlName="titulo">
-            <mat-error *ngIf="validacao.hasErrorValidar(f.titulo,'required')">Campo obrigatório</mat-error>
-            <mat-error *ngIf="validacao.hasErrorValidar(f.titulo,'minlength')">Campo precisa ter no mínimo 2 caracteres</mat-error>
-            <mat-error *ngIf="validacao.hasErrorValidar(f.titulo,'maxlength')">Campo pode ter no máximo 256 caracteres</mat-error>
-          </mat-form-field>
+         <dio-input-text titulo="Título *" [formGroup]="cadastro" controlName="titulo"></dio-input-text>  
 
           <mat-form-field class="full-width">
             <input matInput placeholder="Link Foto" name="urlFoto" formControlName="urlFoto">

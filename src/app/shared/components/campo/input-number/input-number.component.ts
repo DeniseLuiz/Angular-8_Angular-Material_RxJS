@@ -1,16 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 
-
 @Component({
-    selector: 'dio-input-number',
-    templateUrl: './input-number.component.html',
-    styleUrls: ['./input-number.component.css']
+  selector: 'input-number',
+  templateUrl: './input-number.component.html',
+  styleUrls: ['./input-number.component.scss']
 })
+export class InputNumberComponent implements OnInit {
 
-export class InputNumberComponent implements OnInit{
-    constructor () {}
+  constructor() { }
 
-    ngOnInit(){
+  ngOnInit() {
+  }
 
-    }
 }

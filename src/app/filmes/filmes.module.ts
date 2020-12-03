@@ -5,7 +5,7 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { CadastroFilmesComponent } from './cadastro-filmes/cadastro-filmes.component';
 import { MaterialModule } from '../shared/material/material.module';
 import { ListagemFilmesComponent } from './listagem-filmes/listagem-filmes.component';
-import { CamposModule } from '../shared/components/campo/campos.module';
+import { CampoModule } from '../shared/components/campo/campo.module';
 
 @NgModule({
   imports: [
@@ -13,7 +13,7 @@ import { CamposModule } from '../shared/components/campo/campos.module';
     MaterialModule,
     ReactiveFormsModule,
     FormsModule,
-    CamposModule,
+    CampoModule,
   ],
   declarations: [CadastroFilmesComponent, ListagemFilmesComponent]
 })

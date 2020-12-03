@@ -1,16 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 
-
 @Component({
-    selector: 'dio-input-textarea',
-    templateUrl: './input-textarea.component.html',
-    styleUrls: ['./input-textarea.component.css']
+  selector: 'input-textarea',
+  templateUrl: './input-textarea.component.html',
+  styleUrls: ['./input-textarea.component.scss']
 })
+export class InputTextareaComponent implements OnInit {
 
-export class InputTextareaComponent implements OnInit{
-    constructor () {}
+  constructor() { }
 
-    ngOnInit(){
+  ngOnInit() {
+  }
 
-    }
 }
